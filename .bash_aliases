@@ -1,9 +1,9 @@
 #add/remove/update software
-alias apti='sudo apt-get install $1'
+alias apti='sudo apt install $1'
 alias snapi="sudo snap install $1"
-alias aptd='sudo apt-get purge $1 && sudo apt-get autoremove'
+alias aptd='sudo apt purge $1 && sudo apt autoremove'
 alias snapd='sudo snap remove $1'
-alias aptu='sudo apt-get update && sudo apt-get upgrade -y'
+alias aptu='sudo apt update && sudo apt upgrade -y'
 
 #run installed software
 #alias emacs='emacs -nw'
@@ -18,6 +18,8 @@ alias showDisplays='xrandr | grep " connected"'
 alias showKernels='dpkg --list | grep linux-image'
 alias showPorts='sudo netstat -tulpn | grep LISTEN'
 alias ipe='curl ipinfo.io/ip'
+alias diskspace="du -S | sort -n -r |more"
+alias psaux='ps aux'
 
 #extraction function
 ex ()
@@ -44,9 +46,13 @@ ex ()
 }
 
 #Jump to directories
-alias cdfax='cd Linux_Storage/Faks'
-alias cdbash='cd Documents/bash_scripts'
-
+alias prva='cd ~/Linux_Storage/Faks/Prva'
+alias druga='cd ~/Linux_Storage/Faks/Druga'
+alias treca='cd ~/Linux_Storage/Faks/Treca'
+alias scripts='cd ~/Documents/bash_scripts'
+alias downloads='cd ~/Downloads/'
+alias root='cd /'
+alias home='cd ~'
 #directory managment
 alias rmd='rm -r $1'
 alias mvd='mv -r $1'
@@ -72,3 +78,11 @@ alias egrep='egrep --color=auto'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
+#git commands
+alias add='git add $1'
+alias commit='git commit -m '
+alias push='git push -u origin $1'
+alias addorigin='git remote add origin $1'
+#alias pull='git pull'
+alias clone='git clone'
