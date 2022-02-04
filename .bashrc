@@ -42,7 +42,7 @@ fi
 #        then PATH="$HOME/.local/bin:$PATH"
 #fi
 
-if [ -f ~/.bash_aliases ]; then
+if [ -f ~/.fancyprompt ]; then
     . ~/.fancyprompt
 fi
 
