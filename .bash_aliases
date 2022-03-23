@@ -11,16 +11,21 @@ alias cmatrix='cmatrix -a'
 alias tor='"$HOME"/Downloads/tor-browser_en-US/Browser/start-tor-browser'
 alias cactus='cd Linux_Storage/Faks/Druga/bp1; java -jar Cactus.jar'
 
+#run user written scripts
+alias ytd='cd Documents/vscode/test/testpy; python3 ./ytd.py'
+
 
 #various system info commands
-alias showGPUS='lspci -k | grep -A 2 -i "VGA"'
-alias showDisplays='xrandr | grep " connected"'
-alias showKernels='dpkg --list | grep linux-image'
-alias showPorts='sudo netstat -tulpn | grep LISTEN'
+alias showgpus='lspci -k | grep -A 2 -i "VGA"'
+alias showdisplays='xrandr | grep " connected"'
+alias showkernels='dpkg --list | grep linux-image'
+alias showports='sudo netstat -tulpn | grep LISTEN'
 alias ipe='curl ipinfo.io/ip'
 alias diskspace="du -S | sort -n -r |more"
 alias psaux='ps aux'
-
+alias fstab='cat /etc/fstab'
+alias showdpi='xdpyinfo | grep dots'
+alias localhost='echo /var/www/html/'
 #extraction function
 ex ()
 {
@@ -53,6 +58,7 @@ alias scripts='cd ~/Documents/bash_scripts'
 alias downloads='cd ~/Downloads/'
 alias root='cd /'
 alias home='cd ~'
+alias localhostjmp='cd /var/www/html/'
 #directory managment
 alias rmd='rm -r $1'
 alias mvd='mv -r $1'
@@ -80,9 +86,12 @@ alias egrep='egrep --color=auto'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 #git commands
-alias add='git add $1'
+alias add='git add '
 alias commit='git commit -m '
-alias push='git push -u origin $1'
-alias addorigin='git remote add origin $1'
+alias push='git -u push origin '
+alias addorigin='git remote add origin '
 #alias pull='git pull'
 alias clone='git clone'
+
+#generate virtual enviroment for python scripts
+alias pyvenv='python3 -m venv .venv'
