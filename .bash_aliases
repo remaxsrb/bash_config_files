@@ -10,9 +10,11 @@ alias aptu='sudo apt update && sudo apt upgrade -y'
 alias cmatrix='cmatrix -a'
 alias tor='"$HOME"/Downloads/tor-browser_en-US/Browser/start-tor-browser'
 alias cactus='cd Linux_Storage/Faks/Druga/bp1; java -jar Cactus.jar'
+alias spasm='cd Linux_Storage/Faks/Druga/ar/simulatoriasembler; java -jar SPasm.jar'
+alias jbt='cd Downloads/jetbrains-toolbox-1.23.11849; ./jetbrains-toolbox'
 
 #run user written scripts
-alias ytd='cd Documents/vscode/test/testpy; python3 ./ytd.py'
+#alias ytd='cd Documents/vscode/test/testpy; python3 ./ytd.py'
 
 
 #various system info commands
@@ -88,10 +90,14 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 #git commands
 alias add='git add '
 alias commit='git commit -m '
-alias push='git -u push origin '
+alias push='git push origin '
 alias addorigin='git remote add origin '
-#alias pull='git pull'
+alias pull='git pull origin'
 alias clone='git clone'
-
+alias logt='git log --graph --pretty=oneline --abbrev-commit'
 #generate virtual enviroment for python scripts
 alias pyvenv='python3 -m venv .venv'
+
+#generate a ci4 project template
+alias ci='composer create-project codeigniter4/appstarter' 
+
