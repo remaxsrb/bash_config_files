@@ -1,17 +1,22 @@
 #add/remove/update software
-alias apti='sudo apt install $1'
-alias snapi="sudo snap install $1"
-alias aptd='sudo apt purge $1 && sudo apt autoremove'
-alias snapd='sudo snap remove $1'
-alias aptu='sudo apt update && sudo apt upgrade -y'
-
+#alias apti='sudo apt install $1'
+#alias snapi="sudo snap install $1"
+#alias aptd='sudo apt purge $1 && sudo apt autoremove'
+#alias snapd='sudo snap remove $1'
+#alias aptu='sudo apt update && sudo apt upgrade -y'
+alias dnfi='sudo dnf install'
+alias dnfr='sudo dnf remove'
+alias dnfu='sudo dnf update'
+alias dnfc='sudo dnf clean'
+alias flati='flatpak install' 
+alias flatr='flatpak uninstall'
 #run installed software
 #alias emacs='emacs -nw'
 alias cmatrix='cmatrix -a'
 alias tor='"$HOME"/Downloads/tor-browser_en-US/Browser/start-tor-browser'
-alias cactus='cd Linux_Storage/Faks/Druga/bp1; java -jar Cactus.jar'
-alias spasm='cd Linux_Storage/Faks/Druga/ar/simulatoriasembler; java -jar SPasm.jar'
-alias jbt='cd Downloads/jetbrains-toolbox-1.23.11849; ./jetbrains-toolbox'
+alias cactus='cd Storage/faks/druga/bp1; java -jar Cactus.jar'
+#alias spasm='cd Linux_Storage/Faks/Druga/ar/simulatoriasembler; java -jar SPasm.jar'
+#alias jbt='cd Downloads/jetbrains-toolbox-1.23.11849; ./jetbrains-toolbox'
 
 #run user written scripts
 #alias ytd='cd Documents/vscode/test/testpy; python3 ./ytd.py'
@@ -53,9 +58,9 @@ ex ()
 }
 
 #Jump to directories
-alias prva='cd ~/Linux_Storage/Faks/Prva'
-alias druga='cd ~/Linux_Storage/Faks/Druga'
-alias treca='cd ~/Linux_Storage/Faks/Treca'
+alias prva='cd ~/Storage/faks/prva'
+alias druga='cd ~/Storage/faks/druga'
+alias treca='cd ~/Storage/faks/treca'
 alias scripts='cd ~/Documents/bash_scripts'
 alias downloads='cd ~/Downloads/'
 alias root='cd /'
@@ -92,6 +97,7 @@ alias add='git add '
 alias commit='git commit -m '
 alias push='git push origin '
 alias addorigin='git remote add origin '
+alias fetch='git fetch origin'
 alias pull='git pull origin'
 alias clone='git clone'
 alias logt='git log --graph --pretty=oneline --abbrev-commit'
