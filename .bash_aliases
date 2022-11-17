@@ -10,14 +10,15 @@ alias dnfu='sudo dnf update'
 alias dnfc='sudo dnf clean'
 alias flati='flatpak install' 
 alias flatr='flatpak uninstall'
+
 #run installed software
 #alias emacs='emacs -nw'
 alias cmatrix='cmatrix -a'
 alias tor='"$HOME"/Downloads/tor-browser_en-US/Browser/start-tor-browser'
 alias cactus='cd Storage/faks/druga/bp1; java -jar Cactus.jar'
 #alias spasm='cd Linux_Storage/Faks/Druga/ar/simulatoriasembler; java -jar SPasm.jar'
-#alias jbt='cd Downloads/jetbrains-toolbox-1.23.11849; ./jetbrains-toolbox'
-
+alias jbt='cd Storage/jetbrains-toolbox-1.25.12627; ./jetbrains-toolbox'
+alias postman='cd Storage/postman-linux-x64/Postman; ./Postman'
 #run user written scripts
 #alias ytd='cd Documents/vscode/test/testpy; python3 ./ytd.py'
 
@@ -87,6 +88,12 @@ alias e='exit'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
+
+#stop service
+alias stop='sudo systemctl stop'
+#start service
+alias start='sudo systemctl start'
+
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
