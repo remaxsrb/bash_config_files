@@ -68,8 +68,8 @@ alias root='cd /'
 alias home='cd ~'
 alias localhostjmp='cd /var/www/html/'
 #directory managment
-alias rmd='rm -r $1'
-alias mvd='mv -r $1'
+alias rmd='rm -r'
+alias mvd='mv -r'
 
 #info
 alias lsa='ls -lah  --color=auto'
@@ -108,6 +108,13 @@ alias fetch='git fetch origin'
 alias pull='git pull origin'
 alias clone='git clone'
 alias logt='git log --graph --pretty=oneline --abbrev-commit'
+alias softreset='git reset --soft HEAD^'
+
+#docker commands
+alias dockerr='docker container ls'
+alias dockera='docker container ls -a'
+
+
 #generate virtual enviroment for python scripts
 alias pyvenv='python3 -m venv .venv'
 
